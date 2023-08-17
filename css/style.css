@@ -19,8 +19,8 @@ header {
 }
 .container {
     max-width: 75rem;
-    margin: 2rem;
-    padding: 2rem;;
+    margin: 1.5rem;
+    padding: 1.5rem;
 }
 .container p{
    padding: .625rem;
@@ -42,11 +42,14 @@ header {
     margin-top: 2px;
 }
 .card p {
+    display: flex;
+    text-align: center;
     margin-bottom: 1rem;
     padding-top: .625rem;
 }
 .card a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     padding: 0.5rem 1rem;
     background-color: #333;
     color: white;
@@ -58,8 +61,11 @@ header {
     background-color: #555;
 }
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #720460;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 0;
 }
@@ -87,11 +93,6 @@ nav a {
         gap: 1.25rem;
         padding-right: 2.5rem;
     }
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .contact-form {
     background-color: white;
     border: 1px solid #ddd;
@@ -148,4 +149,62 @@ video {
     display: flex;
     justify-content: center;
     padding-bottom: .625rem;
+}
+.experiencias p {
+text-align: justify;
+text-align: center;
+}
+.experiencias ul {
+    text-align: justify;
+text-align: center;
+}
+
+@media (max-width:1020px){
+    .navbar{
+        justify-content: center;
+    }
+    }
+@media (min-width:320px) {
+    .container p {
+        text-align: justify;
+        text-align: center;
+    }
+    .card p {
+        justify-content: center;
+        text-align: justify;
+    }
+    .card h3 {
+        justify-content: center;
+        text-align: center
+    }
+}
+.sectionUno{
+    padding: 1.25rem;
+}
+.trayectoria {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trayectoria li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.job-period {
+    font-style: italic;
+    color: #666;
+}
+
+.job-description {
+    margin-top: 10px;
+    color: #444;
 }
