@@ -23,7 +23,7 @@ header {
     padding: 1.5rem;
 }
 .container p{
-   padding: .625rem;
+    padding: .625rem;
 }
 .card {
     background-color: rgb(255, 255, 255);
@@ -158,26 +158,6 @@ text-align: center;
     text-align: justify;
 text-align: center;
 }
-
-@media (max-width:1020px){
-    .navbar{
-        justify-content: center;
-    }
-    }
-@media (min-width:320px) {
-    .container p {
-        text-align: justify;
-        text-align: center;
-    }
-    .card p {
-        justify-content: center;
-        text-align: justify;
-    }
-    .card h3 {
-        justify-content: center;
-        text-align: center
-    }
-}
 .sectionUno{
     padding: 1.25rem;
 }
@@ -207,4 +187,73 @@ text-align: center;
 .job-description {
     margin-top: 10px;
     color: #444;
+}
+.sectionUno h1{
+    padding: 1rem 1rem;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.profile-picture-container img {
+    width: 12.5rem;
+    height: 12.5rem; 
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
+.experiencias {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #d8d8d8; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experiencias h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.experiencias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experiencias li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.presentacion{
+    padding: 1rem;
+    margin: 0.5rem;
+}
+@media (max-width:1020px){
+    .navbar{
+        justify-content: center;
+    }
+    }
+@media (min-width:320px) {
+    .container p {
+        text-align: justify;
+        text-align: center;
+    }
+    .card p {
+        justify-content: center;
+        text-align: justify;
+    }
+    .card h3 {
+        justify-content: center;
+        text-align: center
+    }
+}
+@media (max-width:768px) {
+    .navbar {
+        justify-content: center;
+    }
 }
